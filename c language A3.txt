@@ -1,0 +1,122 @@
+1. What are the primitive data types in C Language?
+Ans).
+Certainly! In a simple way, the primitive data types in the C programming language are:
+
+   1.int: Used for whole numbers (e.g., 5, -10).
+   2.float: Used for decimal numbers with single precision (e.g., 3.14).
+   3.double: Used for decimal numbers with double precision (e.g., 3.14, 
+     but more precise than float).
+   4.char: Used for individual characters (e.g., 'A', '1').
+   5.short: Used for short integers.
+   6.long: Used for long integers.
+   7.long long: Used for very long integers.
+   8.Bool: Used for Boolean values (true or false).
+
+These data types help define the kind of data a variable can hold and are the basic building blocks for working with different types of information in a C program.
+
+2. What kind of statements can be written outside the function body?
+Ans).
+
+Outside the function body in C, you can write declarations and some other global-level statements. Here are the types of statements that can be written outside the function body:
+
+1.Variable Declarations:
+
+int globalVariable; // Declaration of a global variable
+
+2.Function Declarations:
+
+void myFunction(); // Function declaration
+
+3.Include Statements:
+
+#include <stdio.h> // Include necessary header files
+
+4.Macro Definitions:
+
+#define PI 3.14159 // Define a constant using a macro
+
+5.Struct Declarations:
+
+   struct Point {
+    int x;
+    int y;
+   }; // Declaration of a structure
+
+6.Enumeration Declarations:
+
+   enum Color {
+    RED,
+    GREEN,
+    BLUE
+    }; // Declaration of an enumeration
+These statements are typically referred to as global declarations and are not specific to any particular function. They provide a way to define variables, functions, and other elements that can be used throughout the entire program. It's important to note that executable code (statements that perform actions) is usually placed inside functions, and these global statements help set up the environment for the functions to interact.
+
+3. What is the size of the float type variable?
+Ans).
+
+In most C implementations, the size of a float type variable is typically 4 bytes. This means that a float variable can occupy 4 bytes of memory. The size of data types can vary depending on the system architecture (32-bit or 64-bit), but on many systems, a float is allocated 4 bytes.
+
+Keep in mind that the float data type represents single-precision floating-point numbers. If you need more precision, you can use the double data type, which is usually 8 bytes and represents double-precision floating-point numbers.
+
+4. What is the value of an uninitialized variable? 
+Ans).
+The value of an uninitialized variable in C is unpredictable and could be any garbage value that happens to be in the computer's memory at that location. It's like opening a box without putting anything inside it first — you have no idea what might already be in there. Always initialize variables before using them to ensure they start with a known value.
+
+5. What is the difference between float and double?
+
+Ans).
+The main difference between float and double in C (and many programming languages) lies in the precision and size of the floating-point numbers they can represent:
+
+ 1.Precision:
+
+float: Represents single-precision floating-point numbers with 32 bits. It provides about 7 decimal digits of precision.
+double: Represents double-precision floating-point numbers with 64 bits. It provides about 15 decimal digits of precision.
+
+  2.Size:
+
+float: Typically occupies 4 bytes of memory.
+double: Typically occupies 8 bytes of memory.
+
+In summary, double offers higher precision and a larger range of representable values compared to float. However, this comes at the cost of using more memory. The choice between float and double depends on the specific requirements of your program. If higher precision is crucial, or if you're dealing with very large or very small numbers, double is often preferred. Otherwise, if memory is a concern and the required precision is sufficient, float might be used to conserve memory.
+
+6. What is the full form of ASCII? in simple
+Ans).
+In simple terms, ASCII stands for "American Standard Code for Information Interchange." It's a standard that assigns a unique number to each character (like letters, numbers, and symbols) used in computers. This allows computers to understand and communicate text-based information.
+
+7. What is the difference between a keyword and a function? in simple
+Ans).
+
+Keyword:
+-------
+A keyword is a reserved word in a programming language.
+It has a specific meaning and is used to define the structure or logic of the program.
+Keywords cannot be used as identifiers (names for variables, functions, etc.).
+Examples in C: int, if, else, while, return.
+
+Function:
+---------
+A function is a named block of code that performs a specific task.
+It is defined by the user or provided by the programming language.
+Functions are called by their name to execute the code they contain.
+Examples in C: printf(), scanf(), main(), and user-defined functions like calculateSum().
+In summary, keywords are reserved words with special meanings in the language, while functions are blocks of code that perform specific actions and are invoked by their names.
+
+
+8.Explore the use of type modifiers in C language.
+Ans).
+Data Type Modifiers In C
+
+Modifiers are C keywords that modify the meaning of fundamental data types. It indicates how much memory will be allocated to a variable. Modifiers are prefixed with fundamental data types to adjust the memory allocated for a variable.
+
+9. Can you assign a character constant in an int variable?  in short type answer
+Ans).
+Yes, you can assign a character constant to an int variable, but the character's ASCII or Unicode value will be stored in the int variable.
+
+10. State the following statement as true or false -”Every block of code is a function”.
+Ans).
+False. Not every block of code is a function. A function is a named, reusable block of code that performs a specific task and can be invoked (called) from other parts of the code. Code blocks, on the other hand, can exist within functions, loops, conditionals, etc., and they are simply a way of grouping statements together.
+
+
+
+
+
